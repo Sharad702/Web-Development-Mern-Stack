@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            display: flex;
+            width: 450px;
+            margin: 3px;
+            padding: 2px;
+        }
+        .leftchild{
+            background-color: aqua;
+            width: 47%;
+            border: 1px solid blue;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        .rightchild{
+            background-color: yellow;
+            border: 1px solid brown;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        p{
+            border: 1px solid red;
+
+        }
+img{
+    width: 170px;
+}
+
+        @media (max-width:600px)
+        {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftchild">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="rightchild">
+            <img src="sup3.jpeg" alt="logo" >
+        </div>
+    </div>
+</body>
+</html>

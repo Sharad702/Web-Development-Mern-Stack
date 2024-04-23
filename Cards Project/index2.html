@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Project</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+        }
+
+        .card{
+            height: 600px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image_div img{
+            width: 300px;
+            height: 200px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .content h2{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .content p{
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .plan{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 6px;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            border-radius: 10px;
+            display: flex;
+        }
+        .left img{
+            width: 40px;
+            border-radius: 10px;
+            margin-left: 8px;
+            margin-right: 20px;
+            margin-top: 2px;
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+        }
+
+        .card button{
+            width: 260px;
+        
+            border-radius: 20px;
+            padding: 8px;
+            background-color: rgb(0, 0, 122);
+            color: white;
+            box-shadow: 0px 0px 20px rgb(0, 0, 122);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image_div">
+                <img src="project.png" alt="project">
+            </div>
+            <div class="content">
+                <h2>Order Summary</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis suscipit tenetur earum obcaecati optio id dolores nostrum corrupti sequi.</p>
+            </div>
+
+            <div class="plan">
+                <div class="left">
+                    <img src="playbutton.png" alt="playbutton">
+                </div>
+                <div class="right">
+                    <p>Annual Plan $99.9/year</p>
+                    
+                    <a href="Change">Change</a>
+                </div>
+            </div>
+            <button>Proceed to Payment</button>
+            <a href="Cancel">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
